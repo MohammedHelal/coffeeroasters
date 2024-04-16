@@ -22,28 +22,33 @@ function App() {
     };
   });
 
-  const router = createBrowserRouter([
+  const router = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <RootLayout screenSize={screenSize} />,
+        errorElement: (
+          <div className="error-page">
+            <h1>Error 404: Page not found</h1>
+          </div>
+        ),
+        children: [
+          { index: true, element: <Home screenSize={screenSize} /> },
+          {
+            path: "/about",
+            element: <About screenSize={screenSize} />,
+          },
+          {
+            path: "/subscribe",
+            element: <Subscribe screenSize={screenSize} />,
+          },
+        ],
+      },
+    ],
     {
-      path: "/",
-      element: <RootLayout screenSize={screenSize} />,
-      errorElement: (
-        <div className="error-page">
-          <h1>Error 404: Page not found</h1>
-        </div>
-      ),
-      children: [
-        { index: true, element: <Home screenSize={screenSize} /> },
-        {
-          path: "/about",
-          element: <About screenSize={screenSize} />,
-        },
-        {
-          path: "/subscribe",
-          element: <Subscribe screenSize={screenSize} />,
-        },
-      ],
-    },
-  ]);
+      basename: "/coffeeroasters",
+    }
+  );
 
   return (
     <>
