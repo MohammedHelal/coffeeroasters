@@ -1,0 +1,156 @@
+.commitment {
+  padding: 0 85px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.commitment > img {
+  border-radius: 10px;
+}
+
+.commitment-text {
+  width: 540px;
+}
+
+.quality {
+  background-image: url("../../assets/about/desktop/bg-quality.png");
+  padding: 0 85px;
+  margin-top: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quality > img {
+  border-radius: 15px;
+  margin-top: -85px;
+  margin-bottom: 85px;
+}
+
+.quality-text {
+  color: var(--color-light-cream);
+  width: 540px;
+  padding-top: 50px;
+}
+
+.quality-text > h2 {
+  color: var(--color-light-cream);
+}
+
+.locations {
+  padding: 0 80px;
+}
+
+.locations > h4 {
+  color: var(--color-grey);
+}
+
+.locations-container {
+  display: flex;
+  align-items: flex-start;
+  margin: 50px 0;
+}
+
+.locations-wrapper {
+  margin-right: 100px;
+}
+
+.locations-wrapper > h1 {
+  margin-top: 0;
+}
+
+.locations-wrapper > h3 {
+  width: 300px;
+}
+
+@media screen and (max-width: 770px) {
+  .commitment {
+    padding: 0;
+    margin: 100px 0;
+  }
+
+  .commitment-text {
+    width: 350px;
+  }
+
+  .quality {
+    position: relative;
+    background-image: url("../../assets/about/tablet/bg-quality.png");
+    background-size: cover;
+    padding: 200px 25px 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .quality > img {
+    position: absolute;
+    top: -100px;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  .quality-text {
+    text-align: center;
+  }
+
+  .locations {
+    padding: 0 25px;
+  }
+
+  .locations-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .locations-wrapper {
+    margin-right: 0;
+  }
+
+  .locations-wrapper > h3 {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .commitment {
+    display: block;
+  }
+
+  .commitment > img {
+    width: 100%;
+  }
+
+  .commitment-text > h2 {
+    text-align: center;
+  }
+
+  .quality {
+    background-image: url("../../assets/about/mobile/bg-quality.png");
+    padding: 25px;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .quality > img {
+    position: static;
+    width: 100%;
+  }
+
+  .quality-text {
+    width: 100%;
+  }
+
+  .quality-text > h2 {
+    text-align: center;
+  }
+
+  .locations h4 {
+    border-bottom: 2px solid var(--color-grey);
+  }
+
+  .locations-container {
+    display: block;
+  }
+}

@@ -1,0 +1,58 @@
+.landing {
+  position: relative;
+}
+
+.landing > img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.landing-text {
+  position: absolute;
+  top: 115px;
+  left: 85px;
+  width: 500px;
+  height: 350px;
+}
+
+.landing-text > h1 {
+  color: var(--color-light-cream);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.about-text > p {
+  color: var(--color-light-cream);
+}
+
+.grey-para > p {
+  color: var(--color-grey);
+}
+
+.landing-text > p {
+  margin-bottom: 45px;
+  width: 400px;
+}
+
+@media screen and (max-width: 770px) {
+  .landing > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .landing-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 15px;
+  }
+
+  .landing-text > p {
+    margin-bottom: calc(100% - 177px);
+    width: 100%;
+  }
+}
