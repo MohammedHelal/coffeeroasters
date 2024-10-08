@@ -27,7 +27,7 @@ function Modal({ selection, thankYou, price, setThankYou, open, setOpen }) {
           <div className="modal-main-section">
             <div className="modal-main-text">
               <h4>
-                “I my drink coffee{" "}
+                “I drink my coffee{" "}
                 <span className="cyan-span">{selection.preference}</span>, with
                 a <span className="cyan-span">{selection.type}</span> type of
                 bean. <span className="cyan-span">{selection.amount}</span>
