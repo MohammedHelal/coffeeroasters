@@ -46,7 +46,7 @@ function App() {
       },
     ],
     {
-      basename: "/coffeeroasters",
+      basename: "/",
     }
   );
 
